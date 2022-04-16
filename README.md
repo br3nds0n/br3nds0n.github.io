@@ -1,5 +1,89 @@
 # 🌐 Brendson's website
 
-<h4 align="center"> 
-	🚧 website 🚀 under construction...  🚧
-</h4>
+<p align="center">
+<img height="330" width="850" src="https://user-images.githubusercontent.com/82064724/163681041-d86ee33d-1841-450f-8462-a57659287d17.png">
+</p>
+
+Welcome.
+
+Hello how are you?! My name is Brendson I'm the [author](#-Author) of this project, which shows some of my front-ent development with Javascript. I come through this option to display a little of what I learned. I hope you enjoy!!
+
+Let's get to the project!! 🚀
+
+<br>
+
+> <b>Status code:</b>  Finished!! ✔
+
+ ## <img height="18" width="18" src="https://user-images.githubusercontent.com/82064724/151113975-e8ff6813-b253-4670-b626-80e842363ab2.png">Index
+<!--ts-->
+   * [🧠 Context](#-Context)
+   * [📥 Baixar e executar o projeto](#-Baixar-e-executar-o-projeto)
+     * [Setup da aplicação](#-setup-da-aplicação)
+     * [Iniciando a aplicação](#-iniciando-a-aplicação)
+   * [🛠 Technologies](#-Technologies)
+   * [✍🏼 Autor](#-Autor)
+   * [📝 License](#-license)
+<!--te-->
+
+ ---
+
+ ## 🧠 Context
+> **Project Feature:**  *website portfolio* 🌐 
+
+Neste projeto crio uma api de registro onde pode ser relacionado o filme com a categoria. Aplico os fluxos de:
+
+ * Interação de métodos http. (criar, buscar, editar e remover);
+ * Relacionamento de tabelas
+
+---
+## 🛠 Technologies
+
+The following tools/technologies were used in the construction and testing of the project. By clicking on the technology icon, you will be redirected to the official website for installation: <br>
+
+| logo               | Framework                  | Version      |
+| :----------------- | :------------------------- | :----------: |
+| <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img align="center" alt="html" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>                   | HTML                     |  `5.0.0`      |
+| <a href="https://www.postgresql.org/download/" target="_blank"><img align="center" alt="css" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>            | CSS                    |  `3.0.0`       |
+| <a href="https://www.typescriptlang.org/" target="_blank"><img align="center" alt="javascript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">            | JavaScript                    |  `4.6.2`       |
+| <a href="https://code.visualstudio.com/download" target="_blank"><img align="center" alt="VsCode" height="25" width="35" src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg"></a> | VsCode | `1.66.2` |
+ 
+ <br>
+
+[<Back](#Index)
+ 
+---
+                 
+## ✍🏼 Author
+
+
+<div align=left>
+
+- <table>
+ <p>  Developed by:</p>
+  <tr align=center>
+    <th><strong> 🎖 Brendson Victor  </strong></th>
+  </tr>
+   <td>
+      <a href="https://github.com/br3nds0n">
+        <img width="168" height="140" src="https://media-exp1.licdn.com/dms/image/C4D03AQH4Lyg5QLY14Q/profile-displayphoto-shrink_800_800/0/1649690168220?e=1655337600&v=beta&t=CE9_lwADS7APVkGKaBXv864HxejH2pwiOCwD_wlhHNU" > <p align="left">
+</p></a>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div align=left>
+
+<br>
+
+[<Back](#Index)
+ 
+---
+ 
+## 📝 License
+
+This repository is licensed under **MIT LICENSE**. For more detailed information, read the [LICENSE](./LICENSE) file contained in this repository.
+
+ <br> 
+	
+ [<Back](-Brendson's-website)
