@@ -1013,6 +1013,31 @@ img {
 }
 
 /* For medium devices */
+@media screen and (min-width: 568px){
+  .home__content{
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home__data{
+    grid-column: initial;
+  }
+  .home__img{
+    order: 1;
+    justify-self: center;
+  }
+  .about__container,
+  .skills__container,
+  .portfolio__content,
+  .project__container,
+  .contact__container,
+  .footer__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .qualification__sections{
+    display: grid;
+    grid-template-columns: .6fr;
+    justify-content: center;
+  }
+}
 
 /* For large devices */
