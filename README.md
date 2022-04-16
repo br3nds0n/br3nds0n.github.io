@@ -18,8 +18,7 @@ Let's get to the project!! 🚀
 <!--ts-->
    * [🧠 Context](#-Context)
    * [📥 Baixar e executar o projeto](#-Baixar-e-executar-o-projeto)
-     * [Setup da aplicação](#-setup-da-aplicação)
-     * [Iniciando a aplicação](#-iniciando-a-aplicação)
+   * []()
    * [🛠 Technologies](#-Technologies)
    * [✍🏼 Autor](#-Autor)
    * [📝 License](#-license)
@@ -30,10 +29,11 @@ Let's get to the project!! 🚀
  ## 🧠 Context
 > **Project Feature:**  *website portfolio* 🌐 
 
-Neste projeto crio uma api de registro onde pode ser relacionado o filme com a categoria. Aplico os fluxos de:
+This project is my portfolio site where I do the following implementations:
 
- * Interação de métodos http. (criar, buscar, editar e remover);
- * Relacionamento de tabelas
+ * Light/dark mode;
+ * Responsiveness;
+ * Animations
 
 ---
 ## 🛠 Technologies
