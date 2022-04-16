@@ -18,7 +18,6 @@ Let's get to the project!! 🚀
 <!--ts-->
    * [🧠 Context](#-Context)
    * [📥 Baixar e executar o projeto](#-Baixar-e-executar-o-projeto)
-   * []()
    * [🛠 Technologies](#-Technologies)
    * [✍🏼 Autor](#-Autor)
    * [📝 License](#-license)
