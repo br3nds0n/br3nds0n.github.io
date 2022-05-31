@@ -1,4 +1,4 @@
-# 🌐 Brendson's website <a href="https://github.com/br3nds0n/br3nds0n.github.io/releases" target="_blank"><img align="right" src="https://img.shields.io/badge/release-v0.2.0-green"></a>
+# 🌐 Brendson's website <a href="https://github.com/br3nds0n/br3nds0n.github.io/releases" target="_blank"><img align="right" src="https://img.shields.io/badge/release-v0.2.1-green"></a>
 
 <p align="center">
 <img height="330" width="850" src="https://user-images.githubusercontent.com/82064724/163681041-d86ee33d-1841-450f-8462-a57659287d17.png">
