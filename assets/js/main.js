@@ -11,6 +11,11 @@ if(navToggle){
   })
 }
 
+/* SENT EMAIL */
+function sentEmail(){
+  alert('E-mail Sent!');
+}
+
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
