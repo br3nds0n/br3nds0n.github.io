@@ -514,11 +514,11 @@ img {
 }
 
 .skills__js{
-  width: 60%;
+  width: 70%;
 }
 
 .skills__ts{
-  width: 55%;
+  width: 70%;
 }
 
 .skills__mongo{
@@ -526,11 +526,15 @@ img {
 }
 
 .skills__mysql{
-  width: 50%;
+  width: 70%;
+}
+
+.skills__java{
+  width: 55%;
 }
 
 .skills__postgres{
-  width: 50%;
+  width: 70%;
 }
 
 .skills__close .skills__list{
