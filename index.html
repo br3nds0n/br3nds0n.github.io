@@ -1,541 +1,845 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
 
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Brendson | Portfólio</title>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Brendson</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> Sobre
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i>
-                            Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>
-                            Contato
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
+  <!--
+    - #MAIN
+  -->
 
-            <div class="nav__btns">
-                <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+  <main>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!--
+      - #SIDEBAR
+    -->
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/brendson/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
+    <aside class="sidebar" data-sidebar>
 
-                        <a href="https://github.com/br3nds0n" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github"></i>
-                        </a>
-                    </div>
+      <div class="sidebar-info">
 
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="22" y="32" href="assets/img/perfil.png" />
-                            </g>
-                        </svg>
-                    </div>
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Brendson Victor" width="80">
+        </figure>
 
-                    <div class="home__data">
-                        <h1 class="home__title">Olá, sou o Brendson!!</h1>
-                        <h3 class="home__subtitle">Full Stack Developer</h3>
-                        <p class="home__description">
-                            Tenho experiência sólida como desenvolvedor no mercado de trabalho e estudo Análise e
-                            Desenvolvimento de Sistemas. Estou comprometido em constantemente adquirir novas habilidades
-                            e tecnologias para me manter atualizado.
-                        </p>
-                        <a href="#contact" class="button button--flex">
-                            Contate-me<i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </div>
+        <div class="info-content">
+          <h1 class="name" title="Brendson Victor">Brendson Victor</h1>
 
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Para baixo </span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">
-                Sobre mim
-            </h2>
-            <span class="section__subtitle">A minha introdução</span>
-
-            <div class="about__container container grid">
-                <img src="assets/img/about.jpeg" alt="" class="about__img" />
-
-                <div class="about__data">
-                    <p class="about__description">
-                        Sou um profissional de desenvolvimento com sólida experiência em contribuir para sistemas de
-                        grande relevância nacional. Minha jornada abrange o desenvolvimento de soluções de software
-                        altamente impactantes, com um foco especial em projetos Full-Stack que fazem uso das tecnologias
-                        Java, NodeJs e outras. Estou em constante busca por desafios que me permitam crescer e aprimorar
-                        minhas habilidades.
-                    </p>
-
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Anos <br />
-                                experiência</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Projetos <br />
-                                Completos</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">03+</span>
-                            <span class="about__info-name">
-                                Empresas <br />
-                                trabalhadas</span>
-                        </div>
-                    </div>
-
-                    <div class="about__buttons">
-                        <a download="" href="assets/pdf/Brendson-Cv.pdf" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skilss</h2>
-            <span class="section__subtitle">Meu nível técnico</span>
-
-            <div class="skills__container container grid">
-                <div>
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-server skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Backend</h1>
-                                <span class="kills__subtitle">mais de dois anos</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__java"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Spring</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__java"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">NodeJs</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__node"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__js"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">TypeScript</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__ts"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-database skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Banco de Dados</h1>
-                                <span class="kills__subtitle">mais de dois anos</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MongoDB</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__mongo"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__mysql"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">PostgreSQL</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__postgres"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SQLServer</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__postgres"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualificação</h2>
-            <span class="section__subtitle">Minha jornada pessoal</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Formação
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Trabalho
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">
-                                    Análise e Desenvolvimento de Sistemas
-                                </h3>
-                                <span class="qualification__subtitle">Uninassau - Universidade</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021 até 2024
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="work">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">
-                                    Desenvolvedor NodeJS
-                                </h3>
-                                <span class="qualification__subtitle">CompassoUol</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    11/2021 até 03/2022
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">
-                                    Analista N2
-                                </h3>
-                                <span class="qualification__subtitle">ZeroUm</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    04/2022 até 07/2022
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">
-                                    Desenvolvedor JavaScript
-                                </h3>
-                                <span class="qualification__subtitle">Fazenda Cheia</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    05/2022 até 07/2022
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">
-                                    Desenvolvedor Java
-                                </h3>
-                                <span class="qualification__subtitle">BlueTechnology</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    07/2022 - o momento
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contate-me</h2>
-            <span class="section__subtitle">Entrar em contato</span>
-
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Telefone</h3>
-                            <span class="contact__subtitle">(81) 9 8861-5976</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contact__subtitle">brendson.dev@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Localização</h3>
-                            <span class="contact__subtitle">Recife, PE - Brasil</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form action="https://api.staticforms.xyz/submit" method="post" class="contact__form grid">
-
-                    <input type="hidden" name="accessKey" value="c943193e-a59f-4f87-abcf-266950745683">
-                    <input type="hidden" name="replyTo" value="@">
-                    <input type="hidden" name="redirectTo" value="https://br3nds0n.github.io/#contact">
-
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Nome</label>
-                            <input type="text" name="name" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="text" name="email" class="contact__input">
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Mensagem</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
-
-                    <div>
-                        <button type="submit" class="button button--flex" onclick="sentEmail()">
-                            Enviar
-                            <i class="uil uil-message button__icon"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Brendson</h1>
-                    <span class="footer__subtitle">Backend developer</span>
-                </div>
-
-                <ul class="footer__links">
-                </ul>
-
-                <div class="footer__socials">
-                    <a href="https://www.instagram.com/breendson/" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-
-                    <a href="https://contate.me/brendson" target="_blank" class="footer__social">
-                        <i class="uil uil-whatsapp"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/brendson/" target="_blank" class="footer__social">
-                        <i class="uil uil-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer__copy">&#169; Bredson. All rigth reserved</p>
+          <p class="title">Software Engineer</p>
         </div>
-    </footer>
 
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar Contatos</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+      </div>
 
-    <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:brendson.dev@gmail.com" class="contact-link">brendson.dev@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Telefone</p>
+              <a href="tel:+5581988615976" class="contact-link">+55 (81) 98861-5976</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Aniversário</p>
+              <time datetime="2003-04-23">23 de Abril, 2003</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Localização</p>
+              <address>Recife, PE - Brasil</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/brendson/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/br3nds0n" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Sobre</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Currículo</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfólio</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contato</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="sobre">
+
+        <header>
+          <h2 class="h2 article-title">Sobre Mim</h2>
+        </header>
+
+        <section class="about-text">
+
+          <p>
+            Sou <strong style="color: var(--vegas-gold);">Software Engineer</strong> com foco em
+            <strong style="color: var(--vegas-gold);">backend</strong> e especialização em
+            <strong style="color: var(--vegas-gold);">NestJS</strong>, aplicando
+            <strong style="color: var(--vegas-gold);">DDD</strong>,
+            <strong style="color: var(--vegas-gold);">Clean Architecture</strong> e os princípios
+            <strong style="color: var(--vegas-gold);">SOLID</strong> para construir APIs escaláveis e de alta qualidade.
+          </p>
+
+          <p>
+            Tenho experiência com <strong style="color: var(--vegas-gold);">microsserviços</strong>,
+            <strong style="color: var(--vegas-gold);">gRPC</strong>,
+            <strong style="color: var(--vegas-gold);">RabbitMQ</strong>,
+            <strong style="color: var(--vegas-gold);">.NET</strong>,
+            <strong style="color: var(--vegas-gold);">Spring Boot</strong> e
+            <strong style="color: var(--vegas-gold);">Quarkus</strong>, além de soluções
+            <strong style="color: var(--vegas-gold);">serverless</strong> com
+            <strong style="color: var(--vegas-gold);">AWS Lambda</strong> e
+            <strong style="color: var(--vegas-gold);">S3</strong>.
+            Também trabalho com bancos como
+            <strong style="color: var(--vegas-gold);">PostgreSQL</strong>,
+            <strong style="color: var(--vegas-gold);">MongoDB</strong> e
+            <strong style="color: var(--vegas-gold);">Redis</strong>.
+          </p>
+
+          <p>
+            No frontend, atuo com
+            <strong style="color: var(--vegas-gold);">Vue.js</strong>,
+            <strong style="color: var(--vegas-gold);">Angular</strong> e
+            <strong style="color: var(--vegas-gold);">React</strong>.
+            Gosto de transformar complexidade em soluções simples, mantendo foco em
+            performance,
+            organização e
+            boas práticas.
+          </p>
+
+        </section>
+
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">O que eu faço</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desenvolvimento Web</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de sites e sistemas de alta qualidade em nível profissional.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SaaS - Software as a Service</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de soluções de Software como Serviço modernas e escaláveis em nível profissional.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="currículo">
+
+        <header>
+          <h2 class="h2 article-title">Currículo</h2>
+        </header>
+
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <div class="title-wrapper">
+
+                <h4 class="h4 timeline-item-title">FCxLabs <span>07/2024 — Atual</span> </h4>
+
+              </div>
+              <ol class="timeline-list">
+
+                <li class="timeline-item">
+
+                  <h4 class="h4 timeline-item-title">Pleno Software Engineer </h4>
+
+                  <span>07/2024 — Atual</span>
+                </li>
+
+              </ol>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <div class="title-wrapper">
+
+                <h4 class="h4 timeline-item-title">Blue Technology <span>07/2022 — 07/2024 </span> </h4>
+
+              </div>
+              <ol class="timeline-list">
+
+                <li class="timeline-item">
+
+                  <h4 class="h4 timeline-item-title">Software Developper III </h4>
+
+                  <span>01/2024 — 07/2024 </span>
+                </li>
+
+                <li class="timeline-item">
+
+                  <h4 class="h4 timeline-item-title">Software Developper II</h4>
+
+                  <span>05/2024 — 12/2024</span>
+                </li>
+
+                <li class="timeline-item">
+
+                  <h4 class="h4 timeline-item-title">Software Developper I</h4>
+
+                  <span>07/2022 — 05/2024</span>
+                </li>
+              </ol>
+
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formação Acadêmica</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Análise e Desenvolvimento de Sistemas - Uninassau </h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                Graduação tecnológica focada em engenharia de software, arquitetura de sistemas e gestão de projetos.
+                Desenvolvimento de competências em:
+              </p>
+              <br>
+              <ul class="timeline-text">
+                <li>• Programação full-stack </li>
+                <li>• Modelagem de bancos de dados relacionais e não-relacionais</li>
+                <li>• Engenharia de requisitos e metodologias ágeis (Scrum/Kanban)</li>
+                <li>• Desenvolvimento de aplicações web e mobile</li>
+                <li>• Segurança da informação e governança de TI</li>
+              </ul>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">NestJS & TypeScript</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">.NET & C#</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java & Spring Boot</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">gRPC & RabbitMQ</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">AWS (Lambda & S3)</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">PostgreSQL & MongoDB</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">DDD, Clean Arch & SOLID</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+      <!-- 
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="em construcao" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Software</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-19">19 junho, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Em construção</h3>
+
+                  <p class="blog-text">
+                    ...
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contato">
+
+        <header>
+          <h2 class="h2 article-title">Contato</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126596.5597197481!2d-34.95785024641854!3d-8.015938949853733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18924a6a44e1%3A0x5e97830cf21f8f80!2sRecife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1718812345678!5m2!1spt-BR!2sbr"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </figure>
+        </section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulário de Contato</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nome completo" required
+                data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Endereço de e-mail" required
+                data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Sua mensagem" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar Mensagem</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
